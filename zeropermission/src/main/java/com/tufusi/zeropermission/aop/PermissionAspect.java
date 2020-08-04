@@ -49,7 +49,6 @@ public class PermissionAspect {
         //获取上下文环境
         Context context = (Context) obj;
 
-        Log.e("aroundJoinPoint: ", "走到这里了么");
         //实现动态权限申请
         PermissionRequestActivity.startPermissionRequest(context, required.requestPermission(),
                 required.requestCode(), new IPermission() {
