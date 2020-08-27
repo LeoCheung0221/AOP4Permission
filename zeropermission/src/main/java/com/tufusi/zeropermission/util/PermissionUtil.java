@@ -8,9 +8,6 @@ import android.os.Build;
 import androidx.collection.SimpleArrayMap;
 import androidx.core.app.ActivityCompat;
 
-import com.tufusi.zeropermission.PermissionRequestActivity;
-import com.tufusi.zeropermission.annotation.PermissionRequired;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 

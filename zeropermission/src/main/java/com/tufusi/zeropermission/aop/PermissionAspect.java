@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.tufusi.zeropermission.PermissionRequestActivity;
 import com.tufusi.zeropermission.annotation.PermissionCancel;
+import com.tufusi.zeropermission.annotation.PermissionDenied;
 import com.tufusi.zeropermission.annotation.PermissionRequired;
 import com.tufusi.zeropermission.util.PermissionUtil;
 
@@ -63,7 +64,7 @@ public class PermissionAspect {
 
                     @Override
                     public void onPermissionDenied(int requestCode) {
-                        PermissionUtil.invokeAnnotation(obj, PermissionRequired.class, requestCode);
+                        PermissionUtil.invokeAnnotation(obj, PermissionDenied.class, requestCode);
                     }
 
                     @Override
